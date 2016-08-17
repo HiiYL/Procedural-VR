@@ -7,7 +7,9 @@ public class Bullet : MonoBehaviour {
 
     public bool isMissile = false;
 
-    public float missileSpeed = 50f;
+    public float missileSpeed = 10f;
+
+    public float homingSensitivity = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +20,17 @@ public class Bullet : MonoBehaviour {
 	void Update () {
         if(isMissile)
         {
-            if (!currentTarget)
+            //_distanceFromTarget = Vector3.Distance(this.transform.position, currentTarget.transform.position);
+
+            if (currentTarget && currentTarget.isActiveAndEnabled)
             {
-                this.gameObject.SetActive(false);
+                //transform.LookAt(currentTarget.transform);
+                float step = missileSpeed * Time.deltaTime;
+                this.transform.rotation = Quaternion.LookRotation(currentTarget.transform.position - this.transform.position);
+                this.transform.position = Vector3.MoveTowards(this.transform.position, currentTarget.transform.position, step);
+                //transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
             }
             else {
-                transform.LookAt(currentTarget.transform);
                 transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
             }
             //GetComponent<Rigidbody>().AddForce(currentTarget.transform.position - transform.position * 5);

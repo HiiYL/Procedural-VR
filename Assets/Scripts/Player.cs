@@ -96,7 +96,7 @@ public class Player : MonoBehaviour {
             obj.transform.position = transform.position;
         }
         //obj.GetComponent<Rigidbody>().velocity = transform.forward * 100;
-        obj.GetComponent<AutoDevolvePool>().time = 99;
+        obj.GetComponent<AutoDevolvePool>().time = 15;
         obj.transform.rotation = transform.rotation;
         obj.GetComponent<Bullet>().isMissile = true;
         obj.GetComponent<Bullet>().currentTarget = currentTarget;
@@ -105,8 +105,6 @@ public class Player : MonoBehaviour {
 		//print ("START FIRING!");
 		this.isFiringBullets = true;
         currentTarget = enemy;
-
-
     }
 	public void stopFiringBullets() {
 		//print ("STOP FIRING!");

@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 	public GameObject explosion;
+    public AudioClip explosionSound;
+    private AudioSource audio;
 
 	// Use this for initialization
 	void Start () {
+        audio = GetComponent<AudioSource>();
 	
 	}
 	
@@ -18,12 +21,16 @@ public class Enemy : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "BulletPool" && isActiveAndEnabled)
 		{
-			destroyEnemy ();
+
+            destroyEnemy();
 		}
 	}
 	public void destroyEnemy() {
-		Instantiate (explosion,transform.position,transform.rotation);
-		Destroy (this.gameObject);
+        AudioSource.PlayClipAtPoint(explosionSound, transform.position);
+        audio.PlayOneShot(explosionSound);
+        Instantiate (explosion,transform.position,transform.rotation);
+        gameObject.SetActive(false);
+        Destroy (this.gameObject,explosionSound.length);
 		GameManager.enemiesLeft--;
 	}
 }

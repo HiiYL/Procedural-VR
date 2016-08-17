@@ -141,14 +141,13 @@ public class EndlessTerrain : MonoBehaviour {
                     if (lodIndex != previousLODIndex)
                     {
                         LODMesh lodMesh = lodMeshes[lodIndex];
-                        if (lodMesh.hasMesh && meshc.sharedMesh == null)
+                        if (lodMesh.hasMesh)
                         {
                             previousLODIndex = lodIndex;
 
                             meshFilter.mesh = lodMesh.mesh;
-                            if (lodIndex == 0)
+                            if (lodIndex == 0 && meshc.sharedMesh == null)
                             {
-                                print("SHARED MESH ASSIGNED");
                                 meshc.sharedMesh = lodMesh.mesh;
                             }
                         }

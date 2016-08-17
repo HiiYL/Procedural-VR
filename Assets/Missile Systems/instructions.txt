@@ -1,0 +1,17 @@
+Thank you for downloading this package...
+This file is here to inform you how to set up the different codes in the inspector, the rest is explained in the codes...
+
+For a regular guided missile, you will only need two things in the scene, the target object and the spawn object:
+	make the tag of the target object "Target"
+	make the tag of the spawn object "Shooter"
+	make the tag of the Missile Prefab "Missile"
+
+For a tracer, you will only need only one object in the scene, the spawn object:
+	make the tag of the spawn object "Shooter"
+	make the tag of the Tracer Prefab "Missile"
+
+For a regular guided missile, you will only Only one object in the scene, the spawn object.
+	make the tag of the spawn object "Shooter"
+	make the tag of the Missile Prefab "Missile"
+
+Everything else is commented in the codes...

@@ -103,12 +103,13 @@ public class Player : MonoBehaviour {
     }
 	public void startFiringBullets(Enemy enemy) {
 		//print ("START FIRING!");
-		this.isFiringBullets = true;
+		//this.isFiringBullets = true;
         currentTarget = enemy;
+        fireRaycastBullet();
     }
 	public void stopFiringBullets() {
 		//print ("STOP FIRING!");
-		isFiringBullets = false;
+		//isFiringBullets = false;
         currentTarget = null;
 
     }

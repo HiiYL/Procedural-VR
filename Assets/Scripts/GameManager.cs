@@ -8,6 +8,8 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> enemyShipTypes;
+
+	public GameObject exitGameObject;
     public int numberOfEnemiesLevel1 = 5;
     public int numberOfEnemiesLevel2 = 15;
 
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     private int currentWave = 1;
     private float roundWaitTimeLeft;
 
+	public static bool isNavigatingToExit= false;
+	private bool isSpawnedExit = false;
     // Use this for initialization
     void Start()
     {
@@ -108,14 +112,24 @@ public class GameManager : MonoBehaviour
         {
             roundWaitTimeLeft -= Time.deltaTime;
             enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
+			print ("CALLED");
         }
         else if(enemiesLeft <= 0)
         {
-            print("Round Wait Time is " + roundWaitTimeLeft);
-            if (currentWave != 1)
-            {
-                StartCoroutine(SpawnWave(currentWave));
-            }
+			if (!isSpawnedExit) {
+				print ("SPAWNED EXIT!");
+				Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400,500), Random.Range(-3000, 3000));
+				GameObject obj = (GameObject)Instantiate(exitGameObject, player.transform.position + offset, Quaternion.identity);
+				isSpawnedExit = true;
+				isNavigatingToExit = true;
+			}
+			if (!isNavigatingToExit) {
+				
+				print ("Round Wait Time is " + roundWaitTimeLeft);
+				if (currentWave != 1) {
+					StartCoroutine(SpawnWave(currentWave));
+				}
+			}
         }
         else
         {

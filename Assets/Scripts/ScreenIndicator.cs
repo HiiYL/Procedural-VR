@@ -18,6 +18,8 @@ public class ScreenIndicator : MonoBehaviour {
 	private Bounds collisionBounds;
 	private BoxCollider boxCollider;
 
+	private bool onScreen;
+
 	void Start () {
 		//visible = GetComponent<SpriteRenderer> ().isVisible;
 
@@ -33,14 +35,18 @@ public class ScreenIndicator : MonoBehaviour {
 		collisionBounds = boxCollider.bounds;
 
 		GUI.enabled = false;
+
+		collisionBounds = boxCollider.bounds;
 	}
 
 	void Update() {
+		Vector3 screenPoint = cam.WorldToViewportPoint(this.transform.position);
+		onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
 		collisionBounds = boxCollider.bounds;
 	}
 
 	void OnGUI () {
-		if (GetComponentInChildren<Renderer> ().isVisible) {
+		if (onScreen) {
 			GUI.DrawTexture (GUIRectWithObject (), targetTexture);
 		} else {
 			Vector3 dir = transform.position - cam.transform.position;

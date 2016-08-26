@@ -124,7 +124,6 @@ public class GameManager : MonoBehaviour
 				isNavigatingToExit = true;
 			}
 			if (!isNavigatingToExit) {
-				
 				print ("Round Wait Time is " + roundWaitTimeLeft);
 				if (currentWave != 1) {
 					StartCoroutine(SpawnWave(currentWave));

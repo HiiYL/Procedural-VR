@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
 	public static bool isNavigatingToExit= false;
 	private bool isSpawnedExit = false;
+    private bool roundEnded = false;
     // Use this for initialization
     void Start()
     {
@@ -39,6 +40,61 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnWave(currentWave));
         print("CALLED m8");
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (roundWaitTimeLeft > 0)
+        {
+            roundWaitTimeLeft -= Time.deltaTime;
+            enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
+			print ("CALLED");
+        }
+        else if(enemiesLeft <= 0)
+        {
+			if (!isNavigatingToExit) {
+				print ("Round Wait Time is " + roundWaitTimeLeft);
+				if (currentWave != 1) {
+					StartCoroutine(SpawnWave(currentWave));
+				}
+            }else
+            if (!isSpawnedExit && roundWaitTime == 0)
+            {
+                print("SPAWNED EXIT!");
+                Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
+                GameObject obj = (GameObject)Instantiate(exitGameObject, player.transform.position + offset, Quaternion.identity);
+                isSpawnedExit = true;
+                isNavigatingToExit = true;
+            }
+        }
+        else
+        {
+            enemiesLeftText.text = enemiesLeft + " Enemies Left";
+        }
+        if (Input.GetKeyDown("escape") && !CursorLockedVar)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = (false);
+            CursorLockedVar = (true);
+        }
+        else if (Input.GetKeyDown("escape") && CursorLockedVar)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = (true);
+            CursorLockedVar = (false);
+        }
+
+    }
+    IEnumerator SpawnWave(int wave)
+    {
+        print("CALLED!!!!!");
+        currentWaveText.text = "Wave " + currentWave;
+        roundWaitTimeLeft = roundWaitTime;
+        enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
+        yield return new WaitForSeconds(roundWaitTime);
+        intializeWave(currentWave);
+        currentWave++;
+    }
     void intializeWave(int wave)
     {
         print("INITIALIZING WAVE " + wave);
@@ -47,7 +103,7 @@ public class GameManager : MonoBehaviour
             case 1:
                 for (int x = 0; x < numberOfEnemiesLevel1; x++)
                 {
-                    Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400,500), Random.Range(-3000, 3000));
+                    Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
                     GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
                     obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
                     obj.transform.parent = transform;
@@ -103,59 +159,5 @@ public class GameManager : MonoBehaviour
                 break;
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (roundWaitTimeLeft > 0)
-        {
-            roundWaitTimeLeft -= Time.deltaTime;
-            enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
-			print ("CALLED");
-        }
-        else if(enemiesLeft <= 0)
-        {
-			if (!isSpawnedExit) {
-				print ("SPAWNED EXIT!");
-				Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400,500), Random.Range(-3000, 3000));
-				GameObject obj = (GameObject)Instantiate(exitGameObject, player.transform.position + offset, Quaternion.identity);
-				isSpawnedExit = true;
-				isNavigatingToExit = true;
-			}
-			if (!isNavigatingToExit) {
-				print ("Round Wait Time is " + roundWaitTimeLeft);
-				if (currentWave != 1) {
-					StartCoroutine(SpawnWave(currentWave));
-				}
-			}
-        }
-        else
-        {
-            enemiesLeftText.text = enemiesLeft + " Enemies Left";
-        }
-        if (Input.GetKeyDown("escape") && !CursorLockedVar)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = (false);
-            CursorLockedVar = (true);
-        }
-        else if (Input.GetKeyDown("escape") && CursorLockedVar)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = (true);
-            CursorLockedVar = (false);
-        }
-
-    }
-    IEnumerator SpawnWave(int wave)
-    {
-        print("CALLED!!!!!");
-        currentWaveText.text = "Wave " + currentWave;
-        roundWaitTimeLeft = roundWaitTime;
-        enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
-        yield return new WaitForSeconds(roundWaitTime);
-        intializeWave(currentWave);
-        currentWave++;
     }
 }

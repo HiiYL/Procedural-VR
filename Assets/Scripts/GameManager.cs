@@ -8,27 +8,30 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> enemyShipTypes;
+    public List<int> enemyCountWave;
 
 	public GameObject exitGameObject;
-    public int numberOfEnemiesLevel1 = 5;
-    public int numberOfEnemiesLevel2 = 15;
 
     public int roundWaitTime = 3;
     public GameObject player;
-    private Player playerComponent;
-    private bool CursorLockedVar;
 
     public Text enemiesLeftText;
     public Text currentWaveText;
 
-    public static int enemiesLeft = 0;
+    private static int enemiesLeft = 0;
+    private static bool isNavigatingToExit = false;
 
+
+    private Player playerComponent;
+    private bool CursorLockedVar;
     private int currentWave = 1;
     private float roundWaitTimeLeft;
-
-	public static bool isNavigatingToExit= false;
 	private bool isSpawnedExit = false;
     private bool roundEnded = false;
+    private bool isSpawningWave = false;
+
+    private static GameManager _instance;
+
     // Use this for initialization
     void Start()
     {
@@ -38,7 +41,40 @@ public class GameManager : MonoBehaviour
         playerComponent = player.GetComponent<Player>();
         roundWaitTimeLeft = 999;
         StartCoroutine(SpawnWave(currentWave));
-        print("CALLED m8");
+    }
+
+    public static GameManager Instance { get { return _instance; } }
+
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
+
+    public void enemyDestroyed()
+    {
+        enemiesLeft--;
+        if (enemiesLeft <= 0)
+        {
+            print("SPAWNED EXIT!");
+            enemiesLeftText.text = "Navigate to Exit";
+            Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
+            GameObject obj = (GameObject)Instantiate(exitGameObject, player.transform.position + offset, Quaternion.identity);
+            isSpawnedExit = true;
+            isNavigatingToExit = true;
+        }
+    }
+
+    public void reachedExit()
+    {
+        isNavigatingToExit = false;
     }
 
     // Update is called once per frame
@@ -48,23 +84,11 @@ public class GameManager : MonoBehaviour
         {
             roundWaitTimeLeft -= Time.deltaTime;
             enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
-			print ("CALLED");
         }
         else if(enemiesLeft <= 0)
         {
-			if (!isNavigatingToExit) {
-				print ("Round Wait Time is " + roundWaitTimeLeft);
-				if (currentWave != 1) {
-					StartCoroutine(SpawnWave(currentWave));
-				}
-            }else
-            if (!isSpawnedExit && roundWaitTime == 0)
-            {
-                print("SPAWNED EXIT!");
-                Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
-                GameObject obj = (GameObject)Instantiate(exitGameObject, player.transform.position + offset, Quaternion.identity);
-                isSpawnedExit = true;
-                isNavigatingToExit = true;
+			if (!isNavigatingToExit && !isSpawningWave) {
+				StartCoroutine(SpawnWave(currentWave));
             }
         }
         else
@@ -87,77 +111,34 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator SpawnWave(int wave)
     {
-        print("CALLED!!!!!");
+        isSpawningWave = true;
         currentWaveText.text = "Wave " + currentWave;
         roundWaitTimeLeft = roundWaitTime;
         enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
         yield return new WaitForSeconds(roundWaitTime);
         intializeWave(currentWave);
         currentWave++;
+        isSpawningWave = false;
     }
     void intializeWave(int wave)
     {
         print("INITIALIZING WAVE " + wave);
-        switch (wave)
+        for (int x = 0; x < enemyCountWave[wave]; x++)
         {
-            case 1:
-                for (int x = 0; x < numberOfEnemiesLevel1; x++)
-                {
-                    Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
-                    GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
-                    obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
-                    obj.transform.parent = transform;
-                    EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
-                    EventTrigger.Entry entry = new EventTrigger.Entry();
-                    entry.eventID = EventTriggerType.PointerEnter;
-                    entry.callback.AddListener((eventData) => { playerComponent.startFiringBullets(obj.GetComponent<Enemy>()); });
-                    trigger.triggers.Add(entry);
-                    EventTrigger.Entry entry2 = new EventTrigger.Entry();
-                    entry2.eventID = EventTriggerType.PointerExit;
-                    entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
-                    trigger.triggers.Add(entry2);
-                }
-                enemiesLeft += numberOfEnemiesLevel1;
-                break;
-            case 2:
-                for (int x = 0; x < numberOfEnemiesLevel2; x++)
-                {
-                    Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
-                    GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
-                    obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
-                    obj.transform.parent = transform;
-                    EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
-                    EventTrigger.Entry entry = new EventTrigger.Entry();
-                    entry.eventID = EventTriggerType.PointerEnter;
-                    entry.callback.AddListener((eventData) => { playerComponent.startFiringBullets(obj.GetComponent<Enemy>()); });
-                    trigger.triggers.Add(entry);
-                    EventTrigger.Entry entry2 = new EventTrigger.Entry();
-                    entry2.eventID = EventTriggerType.PointerExit;
-                    entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
-                    trigger.triggers.Add(entry2);
-                }
-                enemiesLeft += numberOfEnemiesLevel2;
-                break;
-            default:
-                for (int x = 0; x < currentWave * numberOfEnemiesLevel1; x++)
-                {
-                    Vector3 offset = new Vector3(Random.Range(-3000, 3000), Random.Range(400, 500), Random.Range(-3000, 3000));
-                    GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
-                    obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
-                    obj.transform.parent = transform;
-                    EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
-                    EventTrigger.Entry entry = new EventTrigger.Entry();
-                    entry.eventID = EventTriggerType.PointerEnter;
-                    entry.callback.AddListener((eventData) => { playerComponent.startFiringBullets(obj.GetComponent<Enemy>()); });
-                    trigger.triggers.Add(entry);
-                    EventTrigger.Entry entry2 = new EventTrigger.Entry();
-                    entry2.eventID = EventTriggerType.PointerExit;
-                    entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
-                    trigger.triggers.Add(entry2);
-                }
-                enemiesLeft += currentWave * numberOfEnemiesLevel1;
-                break;
-
+            Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
+            GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
+            obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
+            obj.transform.parent = transform;
+            EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
+            EventTrigger.Entry entry = new EventTrigger.Entry();
+            entry.eventID = EventTriggerType.PointerEnter;
+            entry.callback.AddListener((eventData) => { playerComponent.startFiringBullets(obj.GetComponent<Enemy>()); });
+            trigger.triggers.Add(entry);
+            EventTrigger.Entry entry2 = new EventTrigger.Entry();
+            entry2.eventID = EventTriggerType.PointerExit;
+            entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
+            trigger.triggers.Add(entry2);
         }
+        enemiesLeft += enemyCountWave[wave];
     }
 }

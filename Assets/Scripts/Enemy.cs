@@ -31,6 +31,6 @@ public class Enemy : MonoBehaviour {
         Instantiate (explosion,transform.position,transform.rotation);
         gameObject.SetActive(false);
         Destroy (this.gameObject,explosionSound.length);
-		GameManager.enemiesLeft--;
+		GameManager.Instance.enemyDestroyed();
 	}
 }

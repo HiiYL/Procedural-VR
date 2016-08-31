@@ -19,7 +19,7 @@ public class exit : MonoBehaviour {
 
 			Vector3 offset = new Vector3(Random.Range(-3000, 3000), 0, Random.Range(-3000, 3000));
 			other.gameObject.transform.position += offset;
-			GameManager.isNavigatingToExit = false;
+			GameManager.Instance.reachedExit();
 			Destroy (this.gameObject);
 		}
 	}

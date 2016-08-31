@@ -23,28 +23,40 @@ public class ScreenIndicator : MonoBehaviour {
 	void Start () {
 		//visible = GetComponent<SpriteRenderer> ().isVisible;
         indicatorCanvas = GameObject.FindWithTag("IndicatorCanvas");
-        indicator = Instantiate(indicatorPrefab, indicatorCanvas.transform.position, indicatorCanvas.transform.rotation) as GameObject;
-        indicator.transform.SetParent(indicatorCanvas.transform); 
         player = GameObject.FindWithTag("Player");
+        indicator = Instantiate(indicatorPrefab, indicatorCanvas.transform.position, indicatorCanvas.transform.rotation) as GameObject;
+        indicator.transform.SetParent(indicatorCanvas.transform);
+
         print("Added indicator");
 
     }
 
 	void Update() {
-        //Vector3 aimVector = transform.position - player.transform.position;
+        // fast rotation
+        var dir = transform.position - player.transform.position;
 
-        //aimVector.y = 0;
+        dir.y = 0;
+
+        var angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+        indicator.transform.localEulerAngles = new Vector3(0, 0, angle);
+
+        //Apply the rotation 
+        //transform.rotation = rot;
+
+        // put 0 on the axys you do not want for the rotation object to rotate
+        //transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
+        /*
 
         indicator.transform.LookAt(transform.position);
-
-        //print(aimVector);
-
+        Debug.DrawLine(transform.position, indicator.transform.position);
         indicator.transform.localEulerAngles = new Vector3(0, 0, indicator.transform.localEulerAngles.z);
+        */
     }
 
     void OnDestroy()
     {
         print("Script was destroyed");
+        Destroy(indicator);
     }
 
 }

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 	public GameObject exitGameObject;
 
     public int roundWaitTime = 3;
+    public int spawnRange = 5000;
     public GameObject player;
 
     public Text enemiesLeftText;
@@ -125,7 +126,14 @@ public class GameManager : MonoBehaviour
         print("INITIALIZING WAVE " + wave);
         for (int x = 0; x < enemyCountWave[wave]; x++)
         {
-            Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
+            float angle = Random.Range(0.0f, Mathf.PI * 2);
+
+            // create a vector with length 1.0
+            Vector3 offset = new Vector3(Mathf.Sin(angle), 0, Mathf.Cos(angle));
+
+            // scale it to the desired length
+            offset *= spawnRange;
+            //Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
             GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
             obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
             obj.transform.parent = transform;

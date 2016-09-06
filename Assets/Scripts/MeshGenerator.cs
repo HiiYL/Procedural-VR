@@ -59,6 +59,7 @@ public static class MeshGenerator {
 				vertexIndex++;
 			}
 		}
+        meshData.BakeNormals();
 
 		return meshData;
 
@@ -71,6 +72,7 @@ public class MeshData {
 	Vector2[] uvs;
 
 	Vector3[] borderVertices;
+    Vector3[] bakedNormals;
 	int[] borderTriangles;
 
 	int triangleIndex;
@@ -93,6 +95,11 @@ public class MeshData {
 			uvs [vertexIndex] = uv;
 		}
 	}
+
+    public void BakeNormals()
+    {
+        bakedNormals = CalculateNormals();
+    }
 
 	public void AddTriangle(int a, int b, int c) {
 		if (a < 0 || b < 0 || c < 0) {
@@ -167,7 +174,7 @@ public class MeshData {
 		mesh.vertices = vertices;
 		mesh.triangles = triangles;
 		mesh.uv = uvs;
-		mesh.normals = CalculateNormals ();
+		mesh.normals = bakedNormals;
 		return mesh;
 	}
 

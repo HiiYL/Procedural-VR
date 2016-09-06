@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
     private ObjectPooling pool;
     private GameObject obj;
 
-    public float rateOfFire = 0.25f;
+    public float rateOfFire = 0.75f;
     public float timeLeftToFire=0;
 
     // Use this for initialization
@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour {
 	void Update () {
         Vector3 directionToTarget = player.transform.position - transform.position;
         float angle = Vector3.Angle(transform.forward, directionToTarget);
-        if (Mathf.Abs(angle) < 15)
+        if (Mathf.Abs(angle) < 10)
         {
             if (timeLeftToFire > rateOfFire)
             {
@@ -33,12 +33,13 @@ public class Enemy : MonoBehaviour {
                 obj = pool.RetrieveInstance();
                 if (obj)
                 {
-                    obj.transform.position = transform.position + transform.forward * 25;
+                    obj.transform.position = transform.position + transform.forward * 50;
                 }
                 //Vector3 direction = (ray.GetPoint(100000.0f) - transform.position);
                 //obj.GetComponent<Rigidbody> ().velocity = direction * 100;
-                obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
+                //obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
                 obj.transform.rotation = transform.rotation;
+
             }
             else
             {

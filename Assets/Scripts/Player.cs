@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
 			//print ("NOT FIRING BULLETS!");
 		}
 		//heightText.text = aeroplaneController.Altitude + "m";
+        /*
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
             if (Input.GetKey(KeyCode.Space))
@@ -59,6 +60,7 @@ public class Player : MonoBehaviour {
 
             }
         }
+        */
     }
 	public void fireRaycastBullet() {
 		print ("Raycast bullets go pew pew");
@@ -88,11 +90,11 @@ public class Player : MonoBehaviour {
 		obj = pool.RetrieveInstance();
 		if (obj)
 		{
-			obj.transform.position = transform.position;
+			obj.transform.position = transform.position + transform.forward;
 		}
 		//Vector3 direction = (ray.GetPoint(100000.0f) - transform.position);
 		//obj.GetComponent<Rigidbody> ().velocity = direction * 100;
-		obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
+		//obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
 		obj.transform.rotation = transform.rotation;
 	}
 
@@ -102,9 +104,8 @@ public class Player : MonoBehaviour {
         obj = pool.RetrieveInstance();
         if (obj)
         {
-            obj.transform.position = transform.position;
+            obj.transform.position = transform.position + transform.forward * 50;
         }
-        //obj.GetComponent<Rigidbody>().velocity = transform.forward * 100;
         obj.GetComponent<AutoDevolvePool>().time = 15;
         obj.transform.rotation = transform.rotation;
         obj.GetComponent<Bullet>().isMissile = true;
@@ -125,6 +126,7 @@ public class Player : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.tag == "BulletPool")
         {
             AudioSource.PlayClipAtPoint(explosionSound, transform.position);
@@ -140,6 +142,7 @@ public class Player : MonoBehaviour {
                 destroyEnemy();
             }
         }
+        
     }
 
 

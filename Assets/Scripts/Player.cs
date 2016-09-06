@@ -5,13 +5,19 @@ using UnityStandardAssets.Vehicles.Aeroplane;
 
 public class Player : MonoBehaviour {
 
-	public GameObject crossHair,explosion;
+    public GameObject crossHair, explosion;
 
-	//public Text heightText;
+    //public Text heightText;
     private ObjectPooling pool;
     private GameObject obj;
-	private AeroplaneController aeroplaneController;
-	private bool isFiringBullets;
+    private AeroplaneController aeroplaneController;
+    public AudioClip explosionSound;
+    private AudioSource audio;
+    private bool isFiringBullets;
+
+    public int fullHealth = 15;
+    private int currentHealth = 15;
+
 
     private Enemy currentTarget;
 
@@ -19,8 +25,11 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Start () {
         pool = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<ObjectPooling>();
-		aeroplaneController = GetComponent<AeroplaneController> ();
+        audio = GetComponent<AudioSource>();
+        aeroplaneController = GetComponent<AeroplaneController> ();
 		isFiringBullets = false;
+
+        currentHealth = fullHealth;
 
     }
 	
@@ -114,9 +123,30 @@ public class Player : MonoBehaviour {
 
     }
 
-	void OnTriggerEnter(Collider other)
-	{
-		//Instantiate (explosion,transform.position,transform.rotation);
-		//Destroy (this.gameObject);
-	}
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "BulletPool")
+        {
+            AudioSource.PlayClipAtPoint(explosionSound, transform.position);
+            audio.PlayOneShot(explosionSound);
+            Instantiate(explosion, transform.position, transform.rotation);
+            if (currentHealth > 0)
+            {
+                //GetComponent<Rigidbody>().AddExplosionForce(25, transform.position, 5);
+                currentHealth--;
+                print(currentHealth);
+            }else
+            {
+                destroyEnemy();
+            }
+        }
+    }
+
+
+    public void destroyEnemy()
+    {
+
+        gameObject.SetActive(false);
+        //Destroy(this.gameObject, explosionSound.length);
+    }
 }

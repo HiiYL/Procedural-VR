@@ -2592,6 +2592,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 2}
   explosionSound: {fileID: 8300000, guid: 2dd4926d85d0a2c4faa882320f443f37, type: 3}
+  player: {fileID: 0}
+  rateOfFire: 0.25
+  timeLeftToFire: 0
 --- !u!114 &11427498
 MonoBehaviour:
   m_ObjectHideFlags: 1

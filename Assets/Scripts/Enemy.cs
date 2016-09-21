@@ -33,13 +33,11 @@ public class Enemy : MonoBehaviour {
                 obj = pool.RetrieveInstance();
                 if (obj)
                 {
+                    print("ENEMY FIRING!");
                     obj.transform.position = transform.position + transform.forward * 50;
+                    obj.transform.rotation = transform.rotation;
+                    obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
                 }
-                //Vector3 direction = (ray.GetPoint(100000.0f) - transform.position);
-                //obj.GetComponent<Rigidbody> ().velocity = direction * 100;
-                //obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
-                obj.transform.rotation = transform.rotation;
-
             }
             else
             {
@@ -48,16 +46,10 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    void FixedUpate()
-    {
-
-    }
-
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "BulletPool" && isActiveAndEnabled)
 		{
-
             destroyEnemy();
 		}
 	}

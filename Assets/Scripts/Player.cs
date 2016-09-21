@@ -18,6 +18,8 @@ public class Player : MonoBehaviour {
     public int fullHealth = 15;
     private int currentHealth = 15;
 
+    public Slider healthSlider;
+
 
     private Enemy currentTarget;
 
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        healthSlider.value = currentHealth / fullHealth;
 		//print (isFiringBullets);
 		if (isFiringBullets == true) {
 			fireRaycastBullet ();
@@ -64,25 +67,8 @@ public class Player : MonoBehaviour {
     }
 	public void fireRaycastBullet() {
 		print ("Raycast bullets go pew pew");
-		RaycastHit hit;
-		if (Physics.Raycast (transform.position, transform.forward, out hit, 100000)) {
-            print("Enemy Hit!");
-            Enemy hitEnemy = hit.collider.gameObject.GetComponent<Enemy>();
-            if (hitEnemy != null)
-            {
-                print("ITS NOT NULL");
-                hitEnemy.destroyEnemy();
-                print("Down The Enemy Goes!");
-                fireBullet();
-                isFiringBullets = false;
-            }
-		} else {
-			print ("NOTHING HIT, DEPLOYING MISSILES");
-            fireMissile();
-		}
+        fireMissile();
 	}
-
-
 	public void fireBullet() {
 		print ("Player Goes Pew Pew!");
 
@@ -112,14 +98,10 @@ public class Player : MonoBehaviour {
         obj.GetComponent<Bullet>().currentTarget = currentTarget;
     }
 	public void startFiringBullets(Enemy enemy) {
-		//print ("START FIRING!");
-		//this.isFiringBullets = true;
         currentTarget = enemy;
-        fireRaycastBullet();
+        fireMissile();
     }
 	public void stopFiringBullets() {
-		//print ("STOP FIRING!");
-		//isFiringBullets = false;
         currentTarget = null;
 
     }
@@ -139,14 +121,14 @@ public class Player : MonoBehaviour {
                 print(currentHealth);
             }else
             {
-                destroyEnemy();
+                destroyPlayer();
             }
         }
         
     }
 
 
-    public void destroyEnemy()
+    public void destroyPlayer()
     {
 
         gameObject.SetActive(false);

@@ -37,6 +37,8 @@ public class Bullet : MonoBehaviour {
         }
 	}
 
+    /*
+
 	IEnumerator OnCallDestroy() {
 		//		animator.SetTrigger("Destroyed");
 		//		yield return new WaitForSeconds(3.0f); // The length of your animation...
@@ -47,4 +49,5 @@ public class Bullet : MonoBehaviour {
 		yield return new WaitForSeconds(3.0f); // The length of your animation...
 		Destroy(this.gameObject);
 	}
+    */
 }

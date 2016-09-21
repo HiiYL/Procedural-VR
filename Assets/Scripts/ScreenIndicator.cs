@@ -17,8 +17,10 @@ public class ScreenIndicator : MonoBehaviour {
 
     private GameObject indicatorCanvas, indicator, player;
 
+    Quaternion rotation;
 
-	private bool onScreen;
+
+    private bool onScreen;
 
 	void Start () {
 		//visible = GetComponent<SpriteRenderer> ().isVisible;
@@ -32,13 +34,27 @@ public class ScreenIndicator : MonoBehaviour {
     }
 
 	void Update() {
+
+        Debug.DrawLine(transform.position, player.transform.position);
+
+
         // fast rotation
-        var dir = transform.position - player.transform.position;
+        //var dir = transform.position - player.transform.position;
 
-        dir.y = 0;
+        //dir.y = 0;
 
-        var angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-        indicator.transform.localEulerAngles = new Vector3(0, 0, angle);
+        //Debug.Log(((player.transform.forward - transform.forward) * 6.28318530718F));
+
+        //var correctedForward = ((player.transform.forward - transform.forward) * 6.28318530718F);
+
+        //var correctedAngle = Mathf.Atan2(correctedForward.z, correctedForward.x) * Mathf.Rad2Deg;
+
+        Vector3 relative = player.transform.InverseTransformPoint(transform.position);
+
+        var angle = Mathf.Atan2(relative.z,relative.x) * Mathf.Rad2Deg;
+        Debug.Log(relative);
+        Debug.Log(angle);
+        indicator.transform.localEulerAngles = new Vector3(0, 0, angle - 90);
 
         //Apply the rotation 
         //transform.rotation = rot;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class EndlessTerrain : MonoBehaviour {
 
-	const float scale = 2f;
+	const float scale = 20f;
 
 	const float viewerMoveThresholdForChunkUpdate = 25f;
 	const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;
@@ -35,12 +35,16 @@ public class EndlessTerrain : MonoBehaviour {
 	}
 
 	void Update() {
-		viewerPosition = new Vector2 (viewer.position.x, viewer.position.z) / scale;
+        if (viewer)
+        {
+            viewerPosition = new Vector2(viewer.position.x, viewer.position.z) / scale;
 
-		if ((viewerPositionOld - viewerPosition).sqrMagnitude > sqrViewerMoveThresholdForChunkUpdate) {
-			viewerPositionOld = viewerPosition;
-			UpdateVisibleChunks ();
-		}
+            if ((viewerPositionOld - viewerPosition).sqrMagnitude > sqrViewerMoveThresholdForChunkUpdate)
+            {
+                viewerPositionOld = viewerPosition;
+                UpdateVisibleChunks();
+            }
+        }
 	}
 		
 	void UpdateVisibleChunks() {
@@ -179,7 +183,10 @@ public class EndlessTerrain : MonoBehaviour {
 		}
 
 		public void SetVisible(bool visible) {
-			meshObject.SetActive (visible);
+            if (meshObject)
+            {
+                meshObject.SetActive(visible);
+            }
 		}
 
 		public bool IsVisible() {

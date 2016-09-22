@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour {
                 obj = pool.RetrieveInstance();
                 if (obj)
                 {
-                    print("ENEMY FIRING!");
                     obj.transform.position = transform.position + transform.forward * 50;
                     obj.transform.rotation = transform.rotation;
                     obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;

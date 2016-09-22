@@ -133,6 +133,8 @@ public class GameManager : MonoBehaviour
 
             // scale it to the desired length
             offset *= spawnRange;
+
+            offset += new Vector3(0, 500, 0);
             //Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
             GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
             obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);

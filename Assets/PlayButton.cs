@@ -26,10 +26,9 @@ public class PlayButton : MonoBehaviour {
             scale.x = (1 - (mouseoverSecondsLeft / secondsToActivate));
             buttonOverlay.transform.localScale = scale;
             mouseoverSecondsLeft -= Time.deltaTime;
-            print(mouseoverSecondsLeft);
             if (mouseoverSecondsLeft <= 0)
             {
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene("Main Scene");
             }
         }
 

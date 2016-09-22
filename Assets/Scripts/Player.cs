@@ -15,13 +15,17 @@ public class Player : MonoBehaviour {
     private AudioSource audio;
     private bool isFiringBullets;
 
-    public int fullHealth = 15;
-    private int currentHealth = 15;
+    public float fullHealth = 15;
+    private float currentHealth = 15;
 
     public Slider healthSlider;
 
+    public Image healthBarCircle;
+
 
     private Enemy currentTarget;
+
+    private bool invincible = false;
 
 
     // Use this for initialization
@@ -37,9 +41,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        healthSlider.value = currentHealth / fullHealth;
-		//print (isFiringBullets);
-		if (isFiringBullets == true) {
+        //healthSlider.value = currentHealth / fullHealth;
+
+        healthBarCircle.fillAmount = currentHealth / fullHealth;
+
+        //print (isFiringBullets);
+        if (isFiringBullets == true) {
 			fireRaycastBullet ();
 			//fireBullet ();
 		} else {
@@ -116,15 +123,27 @@ public class Player : MonoBehaviour {
             Instantiate(explosion, transform.position, transform.rotation);
             if (currentHealth > 0)
             {
-                //GetComponent<Rigidbody>().AddExplosionForce(25, transform.position, 5);
-                currentHealth--;
-                print(currentHealth);
-            }else
+                if (!invincible)
+                {
+
+                    //GetComponent<Rigidbody>().AddExplosionForce(25, transform.position, 5);
+                    currentHealth--;
+                    print(currentHealth);
+                    invincible = true;
+                    Invoke("resetInvulnerability", 2);
+                }
+            }
+            else
             {
                 destroyPlayer();
             }
         }
         
+    }
+
+    void resetInvulnerability()
+    {
+        invincible = false;
     }
 
 

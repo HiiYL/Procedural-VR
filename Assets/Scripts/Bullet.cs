@@ -24,10 +24,15 @@ public class Bullet : MonoBehaviour {
 
             if (currentTarget && currentTarget.isActiveAndEnabled)
             {
+
+                var dist = Vector3.Distance(currentTarget.transform.position, transform.position);
+
                 //transform.LookAt(currentTarget.transform);
                 float step = missileSpeed * Time.deltaTime;
-                this.transform.rotation = Quaternion.LookRotation(currentTarget.transform.position - this.transform.position);
-                this.transform.position = Vector3.MoveTowards(this.transform.position, currentTarget.transform.position, step);
+                var rotation = Quaternion.LookRotation(currentTarget.transform.position - this.transform.position);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+
+                transform.Translate(Vector3.forward * Time.deltaTime * missileSpeed);
                 //transform.Translate(Vector3.forward * missileSpeed * Time.deltaTime);
             }
             else {

@@ -56,7 +56,7 @@ public class MapGenerator : MonoBehaviour {
             }
             if (instance.useFlatShading)
             {
-                return 95;
+                return 47;
             }else
             {
                 return 239;

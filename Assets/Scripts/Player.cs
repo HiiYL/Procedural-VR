@@ -93,7 +93,6 @@ public class Player : MonoBehaviour {
 
     public void fireMissile()
     {
-        print("HEAT SEEKER OF DEATH!!");
         obj = pool.RetrieveInstance();
         if (obj)
         {

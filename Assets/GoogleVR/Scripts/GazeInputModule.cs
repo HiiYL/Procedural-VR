@@ -48,24 +48,18 @@ public class GazeInputModule : BaseInputModule {
   [Tooltip("Whether gaze input is active in VR Mode only (true), or all the time (false).")]
   public bool vrModeOnly = false;
 
-  /// Time in seconds between the pointer down and up events sent by a trigger.
-  /// Allows time for the UI elements to make their state transitions.
-  [HideInInspector]
-  public float clickTime = 0.1f;  // Based on default time for a button to animate to Pressed.
-
-  /// The pixel through which to cast rays, in viewport coordinates.  Generally, the center
-  /// pixel is best, assuming a monoscopic camera is selected as the `Canvas`' event camera.
-  [HideInInspector]
-  public Vector2 hotspot = new Vector2(0.5f, 0.5f);
+  /// The IGvrGazePointer which will be responding to gaze events.
+  public static IGvrGazePointer gazePointer;
 
   private PointerEventData pointerData;
   private Vector2 lastHeadPose;
 
-  /// The IGvrGazePointer which will be responding to gaze events.
-  public static IGvrGazePointer gazePointer;
-
   // Active state
   private bool isActive = false;
+
+  /// Time in seconds between the pointer down and up events sent by a trigger.
+  /// Allows time for the UI elements to make their state transitions.
+  private const float clickTime = 0.1f;  // Based on default time for a button to animate to Pressed.
 
   /// @cond
   public override bool ShouldActivateModule() {
@@ -139,7 +133,7 @@ public class GazeInputModule : BaseInputModule {
 
     // Cast a ray into the scene
     pointerData.Reset();
-    pointerData.position = new Vector2(hotspot.x * Screen.width, hotspot.y * Screen.height);
+    pointerData.position = new Vector2(0.5f * Screen.width, 0.5f * Screen.height);
     eventSystem.RaycastAll(pointerData, m_RaycastResultCache);
     pointerData.pointerCurrentRaycast = FindFirstRaycast(m_RaycastResultCache);
     m_RaycastResultCache.Clear();

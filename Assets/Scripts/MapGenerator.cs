@@ -11,9 +11,8 @@ public class MapGenerator : MonoBehaviour {
 
 	public Noise.NormalizeMode normalizeMode;
 
+	public bool useFlatShading;
 
-
-    public bool useFlatShading;
 	[Range(0,6)]
 	public int editorPreviewLOD;
 	public float noiseScale;
@@ -34,6 +33,7 @@ public class MapGenerator : MonoBehaviour {
 	public bool autoUpdate;
 
 	public TerrainType[] regions;
+	static MapGenerator instance;
 
 	float[,] falloffMap;
 
@@ -44,27 +44,21 @@ public class MapGenerator : MonoBehaviour {
 		falloffMap = FalloffGenerator.GenerateFalloffMap (mapChunkSize);
 	}
 
-    static MapGenerator instance;
+	public static int mapChunkSize {
+		get {
+			if (instance == null) {
+				instance = FindObjectOfType<MapGenerator> ();
+			}
 
-    public static int mapChunkSize
-    {
-        get
-        {
-            if(instance == null)
-            {
-                instance = FindObjectOfType<MapGenerator>();
-            }
-            if (instance.useFlatShading)
-            {
-                return 47;
-            }else
-            {
-                return 239;
-            }
-        }
-    }
+			if (instance.useFlatShading) {
+				return 95;
+			} else {
+				return 239;
+			}
+		}
+	}
 
-    public void DrawMapInEditor() {
+	public void DrawMapInEditor() {
 		MapData mapData = GenerateMapData (Vector2.zero);
 
 		MapDisplay display = FindObjectOfType<MapDisplay> ();
@@ -103,22 +97,25 @@ public class MapGenerator : MonoBehaviour {
 	}
 
 	void MeshDataThread(MapData mapData, int lod, Action<MeshData> callback) {
-		MeshData meshData = MeshGenerator.GenerateTerrainMesh (mapData.heightMap, meshHeightMultiplier, meshHeightCurve, lod, useFlatShading);
+		MeshData meshData = MeshGenerator.GenerateTerrainMesh (mapData.heightMap, meshHeightMultiplier, meshHeightCurve, lod,useFlatShading);
 		lock (meshDataThreadInfoQueue) {
 			meshDataThreadInfoQueue.Enqueue (new MapThreadInfo<MeshData> (callback, meshData));
 		}
 	}
 
 	void Update() {
-        while (mapDataThreadInfoQueue.Count > 0)
-        {
-            MapThreadInfo<MapData> threadInfo = mapDataThreadInfoQueue.Dequeue();
-            threadInfo.callback(threadInfo.parameter);
-        }
+		if (mapDataThreadInfoQueue.Count > 0) {
+			for (int i = 0; i < mapDataThreadInfoQueue.Count; i++) {
+				MapThreadInfo<MapData> threadInfo = mapDataThreadInfoQueue.Dequeue ();
+				threadInfo.callback (threadInfo.parameter);
+			}
+		}
 
-        while (meshDataThreadInfoQueue.Count > 0) { 
-			MapThreadInfo<MeshData> threadInfo = meshDataThreadInfoQueue.Dequeue ();
-			threadInfo.callback (threadInfo.parameter);
+		if (meshDataThreadInfoQueue.Count > 0) {
+			for (int i = 0; i < meshDataThreadInfoQueue.Count; i++) {
+				MapThreadInfo<MeshData> threadInfo = meshDataThreadInfoQueue.Dequeue ();
+				threadInfo.callback (threadInfo.parameter);
+			}
 		}
 	}
 

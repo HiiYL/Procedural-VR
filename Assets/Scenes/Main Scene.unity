@@ -812,7 +812,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!43 &1178306169
+--- !u!43 &1201752203
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1366,7 +1366,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1416363660}
-  m_Mesh: {fileID: 1178306169}
+  m_Mesh: {fileID: 1201752203}
 --- !u!4 &1416363663
 Transform:
   m_ObjectHideFlags: 0
@@ -1439,8 +1439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrModeOnly: 0
-  clickTime: 0.1
-  hotspot: {x: 0.5, y: 0.5}
 --- !u!114 &1449540351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,10 +2241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40b544b8c3553c40852ae7ad35a9343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrModeEnabled: 1
-  distortionCorrection: 2
+  vrModeEnabled: 0
+  distortionCorrection: 1
   neckModelScale: 0
-  electronicDisplayStabilization: 0
   autoUntiltHead: 1
   UseUnityRemoteInput: 0
   screenSize: 0

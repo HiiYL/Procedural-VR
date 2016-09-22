@@ -12,9 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#define CARDBOARD_HACK
+
 using UnityEngine;
 using System.Collections;
 using System.Linq;
+
 
 /// Controls a pair of GvrEye objects that will render the stereo view
 /// of the camera this script is attached to.
@@ -342,7 +345,12 @@ public class StereoController : MonoBehaviour {
       // Turn off the mono camera so it doesn't waste time rendering.  Remember to reenable.
       // @note The mono camera is left on from beginning of frame till now in order that other game
       // logic (e.g. referring to Camera.main) continues to work as expected.
-      cam.enabled = false;
+    #if CARDBOARD_HACK
+    #warning Due to a Unity bug, a worldspace canvas in a camera that renders to a RenderTexture allocates infinite memory. Uncomment this line when fixed.
+                BlackOutMonoCamera();
+    #else
+                cam.enabled = false;
+    #endif
       renderedStereo = true;
     } else {
       GvrViewer.Instance.UpdateState();
@@ -353,10 +361,37 @@ public class StereoController : MonoBehaviour {
     while (true) {
       // If *we* turned off the mono cam, turn it back on for next frame.
       if (renderedStereo) {
-        cam.enabled = true;
+        #if CARDBOARD_HACK
+            RestoreMonoCamera();
+        #else
+            cam.enabled = true;
+        #endif
         renderedStereo = false;
       }
       yield return new WaitForEndOfFrame();
     }
   }
+    #if CARDBOARD_HACK
+        private CameraClearFlags m_MonoCameraClearFlags;
+        private Color m_MonoCameraBackgroundColor;
+        private int m_MonoCameraCullingMask;
+
+        private void BlackOutMonoCamera()
+        {
+            m_MonoCameraClearFlags = cam.clearFlags;
+            m_MonoCameraBackgroundColor = cam.backgroundColor;
+            m_MonoCameraCullingMask = cam.cullingMask;
+
+            cam.clearFlags = CameraClearFlags.SolidColor;
+            cam.backgroundColor = Color.black;
+            cam.cullingMask = 0;
+        }
+
+        private void RestoreMonoCamera()
+        {
+            cam.clearFlags = m_MonoCameraClearFlags;
+            cam.backgroundColor = m_MonoCameraBackgroundColor;
+            cam.cullingMask = m_MonoCameraCullingMask;
+        }
+    #endif
 }

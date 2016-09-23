@@ -52,6 +52,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _OcclusionMap
       second:
         m_Texture: {fileID: 0}
@@ -83,8 +89,17 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
         name: _Glossiness
       second: 0.5
+    - first:
+        name: _GlossyReflections
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0
     - first:
         name: _Mode
       second: 0
@@ -94,6 +109,12 @@ Material:
     - first:
         name: _Parallax
       second: 0.02
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
     - first:
         name: _SrcBlend
       second: 1

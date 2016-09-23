@@ -1,0 +1,3734 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+VR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_PathRegistryNotFound: "Installation path could not be located (110)"!
+ 
+(Filename:  Line: 771)
+
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8145 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Google.ProtocolBuffers.dll (this message is harmless)
+Loading C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\Google.ProtocolBuffers.dll into Unity Child Domain
+- Completed reload, in  0.185 seconds
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\yongl\OneDrive\Documents\GitHub\Procedural-VR\test_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on GvrViewer
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+VR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_PathRegistryNotFound: "Installation path could not be located (110)"!
+ 
+(Filename:  Line: 771)
+
+VR: OpenVR Error! OpenVR failed initialization with error code VRInitError_Init_PathRegistryNotFound: "Installation path could not be located (110)"!
+ 
+(Filename:  Line: 771)
+
+UnloadTime: 0.793664 ms
+InvalidOperationException: Unsupported device.
+  at Gvr.Internal.BaseVRDevice.GetDevice () [0x00000] in <filename unknown>:0 
+  at GvrViewer.InitDevice () [0x00000] in <filename unknown>:0 
+  at GvrViewer.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnDisable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnApplicationPause (Boolean pause) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnApplicationFocus (Boolean focus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 547c -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnApplicationFocus (Boolean focus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnApplicationFocus (Boolean focus) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GazeInputModule.CastRayFromGaze () [0x00000] in <filename unknown>:0 
+  at GazeInputModule.Process () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GvrViewer.OnApplicationQuit () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

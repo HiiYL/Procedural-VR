@@ -5,34 +5,48 @@ public class Enemy : MonoBehaviour {
 	public GameObject explosion;
     public AudioClip explosionSound;
     public GameObject player;
-    private AudioSource audio;
-    private ObjectPooling pool;
-    private GameObject obj;
+
+    public float fullHealth = 1;
+
+    protected AudioSource audio;
+    protected ObjectPooling pool;
+    protected GameObject obj;
+
+    protected float currentHealth;
 
     public float rateOfFire = 0.75f;
     public float timeLeftToFire=0;
 
+    public static float missileRateOfFire = 30.0f;
+    protected static float missileTimeLeftToFire = 0;
+
+
     // Use this for initialization
-    void Start () {
+    protected void Start () {
         audio = GetComponent<AudioSource>();
 
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         pool = GameObject.FindGameObjectWithTag("BulletPool").GetComponent<ObjectPooling>();
 
+        currentHealth = fullHealth;
     }
 	
 	// Update is called once per frame
 	void Update () {
         Vector3 directionToTarget = player.transform.position - transform.position;
+        
         float angle = Vector3.Angle(transform.forward, directionToTarget);
         if (Mathf.Abs(angle) < 10)
         {
-            if (timeLeftToFire > rateOfFire)
+            float dist = Vector3.Distance(player.transform.position, transform.position);
+            
+            if (timeLeftToFire > rateOfFire && dist < 2000)
             {
-                timeLeftToFire = 0;
+
                 obj = pool.RetrieveInstance();
                 if (obj)
                 {
+                    timeLeftToFire = 0;
                     obj.transform.position = transform.position + transform.forward * 50;
                     obj.transform.rotation = transform.rotation;
                     Bullet bullet = obj.GetComponent<Bullet>();
@@ -47,14 +61,36 @@ public class Enemy : MonoBehaviour {
             {
                 timeLeftToFire += Time.deltaTime;
             }
+            
+            if(missileTimeLeftToFire > missileRateOfFire)
+            {
+                obj = pool.RetrieveInstance();
+                if (obj)
+                {
+                    missileTimeLeftToFire = 0;
+                    obj.GetComponent<AutoDevolvePool>().time = 5;
+                    obj.transform.rotation = transform.rotation;
+                    obj.GetComponent<Bullet>().isMissile = true;
+                    obj.layer = LayerMask.NameToLayer("Enemy");
+                    obj.GetComponent<Bullet>().currentTarget = player.gameObject;
+                }
+            }else
+            {
+                missileTimeLeftToFire += Time.deltaTime;
+            }
         }
     }
 
-	void OnTriggerEnter(Collider other)
+	public void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "BulletPool" && isActiveAndEnabled)
 		{
-            destroyEnemy();
+            //pool.DevolveInstance(other.gameObject);
+            currentHealth--;
+            if (currentHealth <= 0)
+            {
+                destroyEnemy();
+            }
 		}
 	}
 
@@ -65,6 +101,6 @@ public class Enemy : MonoBehaviour {
         Instantiate (explosion,transform.position,transform.rotation);
         gameObject.SetActive(false);
         Destroy (this.gameObject,explosionSound.length);
-		GameManager.Instance.enemyDestroyed();
+		GameManager.Instance.enemyDestroyed(this);
 	}
 }

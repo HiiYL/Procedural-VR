@@ -60,6 +60,7 @@ public class EndlessTerrain : MonoBehaviour {
 				if (terrainChunkDictionary.ContainsKey (viewedChunkCoord)) {
 					terrainChunkDictionary [viewedChunkCoord].UpdateTerrainChunk ();
 				} else {
+                    print("Adding Terrain Chunk " + viewedChunkCoord);
 					terrainChunkDictionary.Add (viewedChunkCoord, new TerrainChunk (viewedChunkCoord, chunkSize, detailLevels, transform, mapMaterial));
 				}
 
@@ -100,6 +101,7 @@ public class EndlessTerrain : MonoBehaviour {
 
 			meshObject.transform.position = positionV3 * scale;
 			meshObject.transform.parent = parent;
+            meshObject.tag = parent.gameObject.tag;
 			meshObject.transform.localScale = Vector3.one * scale;
 			SetVisible(false);
 

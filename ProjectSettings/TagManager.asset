@@ -7,6 +7,8 @@ TagManager:
   - BulletPool
   - Enemy
   - IndicatorCanvas
+  - TargetBox
+  - Terrain
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - 
   - Player
   - Enemy
-  - 
-  - 
-  - 
+  - TargetBox
+  - PowerUp
+  - Terrain
   - 
   - 
   - 

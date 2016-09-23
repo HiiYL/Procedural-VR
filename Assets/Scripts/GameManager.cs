@@ -7,10 +7,30 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-    public List<GameObject> enemyShipTypes;
-    public List<int> enemyCountWave;
+   // public List<GameObject> enemyShipTypes;
+   // public List<int> enemyCountWave;
+    public List<Material> skyBoxes;
 
 	public GameObject exitGameObject;
+
+    public List<GameObject> powerUps;
+
+    [System.Serializable]
+    public struct WaveInputPair
+    {
+        public GameObject unit;
+        public int count;
+    }
+
+    [System.Serializable]
+    public struct WaveInputPairs
+    {
+        public List<WaveInputPair> waveInputs;
+    }
+
+    public List<WaveInputPairs> wavesInputs;
+
+
 
     public int roundWaitTime = 3;
     public int spawnRange = 5000;
@@ -31,17 +51,25 @@ public class GameManager : MonoBehaviour
     private bool roundEnded = false;
     private bool isSpawningWave = false;
 
+    private List<GameObject> activePowerups;
+
+
+
+
+
     private static GameManager _instance;
 
     // Use this for initialization
     void Start()
     {
+        setRandomSkyBox();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = (false);
         CursorLockedVar = (true);
         playerComponent = player.GetComponent<Player>();
         roundWaitTimeLeft = 999;
         StartCoroutine(SpawnWave(currentWave));
+        activePowerups = new List<GameObject>();
     }
 
     public static GameManager Instance { get { return _instance; } }
@@ -59,8 +87,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void enemyDestroyed()
+    public void enemyDestroyed(Enemy enemy)
     {
+        //Spawn powerups
+        var powerUp = Instantiate(powerUps[Random.Range(0, powerUps.Count)], enemy.transform.position, Quaternion.identity) as GameObject;
+        activePowerups.Add(powerUp);
         enemiesLeft--;
         if (enemiesLeft <= 0)
         {
@@ -73,9 +104,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void setRandomSkyBox()
+    {
+        RenderSettings.skybox = skyBoxes[Random.Range(0, skyBoxes.Count)];
+    }
+
     public void reachedExit()
     {
+        setRandomSkyBox();
         isNavigatingToExit = false;
+        for(int i = 0; i < activePowerups.Count; i++)
+        {
+            Destroy(activePowerups[i]);
+        }
     }
 
     // Update is called once per frame
@@ -88,8 +129,17 @@ public class GameManager : MonoBehaviour
         }
         else if(enemiesLeft <= 0)
         {
-			if (!isNavigatingToExit && !isSpawningWave) {
-				StartCoroutine(SpawnWave(currentWave));
+            if (currentWave <= wavesInputs.Count)
+            {
+                if (!isNavigatingToExit && !isSpawningWave)
+                {
+                    StartCoroutine(SpawnWave(currentWave));
+                }
+            }
+            else
+            {
+                currentWaveText.text = "Congratulations!";
+                enemiesLeftText.text = "You Win!";
             }
         }
         else
@@ -124,7 +174,15 @@ public class GameManager : MonoBehaviour
     void intializeWave(int wave)
     {
         print("INITIALIZING WAVE " + wave);
-        for (int x = 0; x < enemyCountWave[wave]; x++)
+        WaveInputPairs waveInputPairs = wavesInputs[wave - 1];
+        foreach (WaveInputPair waveInputPair in waveInputPairs.waveInputs)
+        {
+            spawnEnemy(waveInputPair.unit, waveInputPair.count);
+        }
+    }
+    void spawnEnemy(GameObject toSpawn, int count)
+    {
+        for (int x = 0; x < count; x++)
         {
             float angle = Random.Range(0.0f, Mathf.PI * 2);
 
@@ -136,8 +194,9 @@ public class GameManager : MonoBehaviour
 
             offset += new Vector3(0, 500, 0);
             //Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
-            GameObject obj = (GameObject)Instantiate(enemyShipTypes[0], player.transform.position + offset, Quaternion.identity);
-            obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
+            GameObject obj = (GameObject)Instantiate(toSpawn, player.transform.position + offset, Quaternion.identity);
+            if(obj.GetComponent<AeroplaneAiControl>())
+                obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
             obj.transform.parent = transform;
             EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
             EventTrigger.Entry entry = new EventTrigger.Entry();
@@ -149,6 +208,7 @@ public class GameManager : MonoBehaviour
             entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
             trigger.triggers.Add(entry2);
         }
-        enemiesLeft += enemyCountWave[wave];
+        enemiesLeft += count;
+
     }
 }

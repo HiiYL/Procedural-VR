@@ -23,6 +23,8 @@ public class MapGenerator : MonoBehaviour {
 	public float lacunarity;
 
 	public int seed;
+    public bool randomSeed = false;
+
 	public Vector2 offset;
 
 	public bool useFalloff;
@@ -42,7 +44,9 @@ public class MapGenerator : MonoBehaviour {
 
 	void Awake() {
 		falloffMap = FalloffGenerator.GenerateFalloffMap (mapChunkSize);
-	}
+        if(randomSeed)
+            seed = (int)System.DateTime.Now.Ticks;
+    }
 
 	public static int mapChunkSize {
 		get {

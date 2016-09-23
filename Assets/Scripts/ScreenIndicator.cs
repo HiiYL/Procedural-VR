@@ -5,13 +5,12 @@ using System;
 
 //Attach this class to the GameObject you want the arrow to be pointing at.
 public class ScreenIndicator : MonoBehaviour {
-
-	public Texture2D icon; //The icon. Preferably an arrow pointing upwards.
-	public Texture2D targetTexture;
+	//public Texture2D targetTexture;
 	public float iconSize = 50f;
 
     public GameObject indicatorPrefab;
-	bool visible = true; //Whether or not the object is visible in the camera.
+    public GameObject targetBoxPrefab;
+    bool visible = true; //Whether or not the object is visible in the camera.
 	private Bounds collisionBounds;
 	private BoxCollider boxCollider;
 
@@ -22,13 +21,14 @@ public class ScreenIndicator : MonoBehaviour {
 
     private bool onScreen;
 
+    private Canvas canvas;
+
 	void Start () {
 		//visible = GetComponent<SpriteRenderer> ().isVisible;
         indicatorCanvas = GameObject.FindWithTag("IndicatorCanvas");
         player = GameObject.FindWithTag("Player");
         indicator = Instantiate(indicatorPrefab, indicatorCanvas.transform.position, indicatorCanvas.transform.rotation) as GameObject;
         indicator.transform.SetParent(indicatorCanvas.transform);
-
     }
 
 	void Update() {

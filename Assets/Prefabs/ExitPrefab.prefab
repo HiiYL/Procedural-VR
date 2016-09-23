@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1000010349461776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 500, z: -250}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 250, y: 250, z: 35}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: dd49e5f902f399046b7d8d502f14f3f8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -114,8 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0a8432c18104a2a822329ecdb7bc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 2800000, guid: aec3ef1a0b06a443da8b17fc90de0432, type: 3}
-  targetTexture: {fileID: 2800000, guid: 2e5b0a1fbf9494011acf5ce9937b9d86, type: 3}
   iconSize: 25
   indicatorPrefab: {fileID: 1000010779601276, guid: 741944869b3de064c85ad9e165697c97,
     type: 2}
+  targetBoxPrefab: {fileID: 0}

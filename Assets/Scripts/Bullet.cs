@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 	public GameObject explosion;
-    public Enemy currentTarget;
+    public GameObject currentTarget;
 
     public bool isMissile = false;
 
@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour {
         {
             //_distanceFromTarget = Vector3.Distance(this.transform.position, currentTarget.transform.position);
 
-            if (currentTarget && currentTarget.isActiveAndEnabled)
+            if (currentTarget && currentTarget.activeInHierarchy)
             {
 
                 var dist = Vector3.Distance(currentTarget.transform.position, transform.position);

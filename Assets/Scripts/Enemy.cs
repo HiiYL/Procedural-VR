@@ -35,6 +35,11 @@ public class Enemy : MonoBehaviour {
                 {
                     obj.transform.position = transform.position + transform.forward * 50;
                     obj.transform.rotation = transform.rotation;
+                    Bullet bullet = obj.GetComponent<Bullet>();
+                    //bullet.isMissile = true;
+                    //bullet.currentTarget = player;
+                    obj.layer = LayerMask.NameToLayer("Enemy");
+                    //obj.GetComponent<AutoDevolvePool>().time = 15;
                     obj.GetComponent<Rigidbody>().velocity = transform.forward * 1000;
                 }
             }

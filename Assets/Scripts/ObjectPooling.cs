@@ -40,6 +40,7 @@ public class ObjectPooling : MonoBehaviour
         {
             go.GetComponent<TrailRenderer>().Clear();
         }
+        go.layer = LayerMask.NameToLayer("Default");
         go.SetActive(false);
     }
 }

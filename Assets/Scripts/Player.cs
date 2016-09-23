@@ -18,8 +18,6 @@ public class Player : MonoBehaviour {
     public float fullHealth = 15;
     private float currentHealth = 15;
 
-    public Slider healthSlider;
-
     public Image healthBarCircle;
 
 
@@ -101,7 +99,7 @@ public class Player : MonoBehaviour {
         obj.GetComponent<AutoDevolvePool>().time = 15;
         obj.transform.rotation = transform.rotation;
         obj.GetComponent<Bullet>().isMissile = true;
-        obj.GetComponent<Bullet>().currentTarget = currentTarget;
+        obj.GetComponent<Bullet>().currentTarget = currentTarget.gameObject;
     }
 	public void startFiringBullets(Enemy enemy) {
         currentTarget = enemy;
@@ -117,24 +115,23 @@ public class Player : MonoBehaviour {
         
         if (other.gameObject.tag == "BulletPool")
         {
-            AudioSource.PlayClipAtPoint(explosionSound, transform.position);
-            audio.PlayOneShot(explosionSound);
-            Instantiate(explosion, transform.position, transform.rotation);
-            if (currentHealth > 0)
+            if (!invincible)
             {
-                if (!invincible)
+                AudioSource.PlayClipAtPoint(explosionSound, transform.position);
+                audio.PlayOneShot(explosionSound);
+                Instantiate(explosion, transform.position, transform.rotation);
+                if (currentHealth > 0)
                 {
-
                     //GetComponent<Rigidbody>().AddExplosionForce(25, transform.position, 5);
                     currentHealth--;
                     print(currentHealth);
                     invincible = true;
                     Invoke("resetInvulnerability", 2);
                 }
-            }
-            else
-            {
-                destroyPlayer();
+                else
+                {
+                    destroyPlayer();
+                }
             }
         }
         

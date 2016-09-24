@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour {
                 timeLeftToFire += Time.deltaTime;
             }
             
-            if(missileTimeLeftToFire > missileRateOfFire)
+            if(missileTimeLeftToFire > missileRateOfFire && dist < 2000)
             {
                 obj = pool.RetrieveInstance();
                 if (obj)

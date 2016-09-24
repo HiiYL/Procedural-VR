@@ -27,16 +27,22 @@ public class ScreenIndicator : MonoBehaviour {
 		//visible = GetComponent<SpriteRenderer> ().isVisible;
         indicatorCanvas = GameObject.FindWithTag("IndicatorCanvas");
         player = GameObject.FindWithTag("Player");
-        indicator = Instantiate(indicatorPrefab, indicatorCanvas.transform.position, indicatorCanvas.transform.rotation) as GameObject;
-        indicator.transform.SetParent(indicatorCanvas.transform);
+        if (player)
+        {
+            indicator = Instantiate(indicatorPrefab, indicatorCanvas.transform.position, indicatorCanvas.transform.rotation) as GameObject;
+            indicator.transform.SetParent(indicatorCanvas.transform);
+        }
     }
 
 	void Update() {
+        if (player)
+        {
 
-        Vector3 relative = player.transform.InverseTransformPoint(transform.position);
+            Vector3 relative = player.transform.InverseTransformPoint(transform.position);
 
-        var angle = Mathf.Atan2(relative.z,relative.x) * Mathf.Rad2Deg;
-        indicator.transform.localEulerAngles = new Vector3(0, 0, angle - 90);
+            var angle = Mathf.Atan2(relative.z, relative.x) * Mathf.Rad2Deg;
+            indicator.transform.localEulerAngles = new Vector3(0, 0, angle - 90);
+        }
     }
 
     void OnDestroy()

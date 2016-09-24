@@ -19,8 +19,8 @@ public class Player : MonoBehaviour {
     private AudioSource audio;
     private bool isFiringBullets;
 
-    public float fullHealth = 15;
-    private float currentHealth = 15;
+    public float fullHealth = 5;
+    private float currentHealth;
 
     public Image healthBarCircle;
 
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour {
 
     public void restoreHealth(float health)
     {
-        currentHealth = Mathf.Max(fullHealth, currentHealth + health);
+        currentHealth = Mathf.Min(fullHealth, currentHealth + health);
     }
 
     // Update is called once per frame
@@ -105,15 +105,18 @@ public class Player : MonoBehaviour {
 
     public void fireMissile()
     {
-        obj = pool.RetrieveInstance();
-        if (obj)
+        if (isActiveAndEnabled)
         {
-            obj.transform.position = transform.position + transform.forward * 50;
-            obj.GetComponent<AutoDevolvePool>().time = 15;
-            obj.transform.rotation = transform.rotation;
-            obj.GetComponent<Bullet>().isMissile = true;
-            obj.layer = LayerMask.NameToLayer("Player");
-            obj.GetComponent<Bullet>().currentTarget = currentTarget.gameObject;
+            obj = pool.RetrieveInstance();
+            if (obj)
+            {
+                obj.transform.position = transform.position + transform.forward * 50;
+                obj.GetComponent<AutoDevolvePool>().time = 15;
+                obj.transform.rotation = transform.rotation;
+                obj.GetComponent<Bullet>().isMissile = true;
+                obj.layer = LayerMask.NameToLayer("Player");
+                obj.GetComponent<Bullet>().currentTarget = currentTarget.gameObject;
+            }
         }
     }
 	public void startFiringBullets(Enemy enemy) {
@@ -137,10 +140,10 @@ public class Player : MonoBehaviour {
                 AudioSource.PlayClipAtPoint(explosionSound, transform.position);
                 audio.PlayOneShot(explosionSound);
                 Instantiate(explosion, transform.position, transform.rotation);
+                currentHealth--;
                 if (currentHealth > 0)
                 {
                     //GetComponent<Rigidbody>().AddExplosionForce(25, transform.position, 5);
-                    currentHealth--;
                     print(currentHealth);
                     invincible = true;
                     StartCoroutine(Blink(5f, 0.2f));
@@ -181,6 +184,6 @@ public class Player : MonoBehaviour {
     {
 
         gameObject.SetActive(false);
-        //Destroy(this.gameObject, explosionSound.length);
+        GameManager.Instance.playerDestroyed();
     }
 }

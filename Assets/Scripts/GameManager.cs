@@ -7,8 +7,9 @@ using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-   // public List<GameObject> enemyShipTypes;
-   // public List<int> enemyCountWave;
+    // public List<GameObject> enemyShipTypes;
+    // public List<int> enemyCountWave;
+    public GameObject GameOverCanvas;
     public List<Material> skyBoxes;
 
 	public GameObject exitGameObject;
@@ -39,8 +40,10 @@ public class GameManager : MonoBehaviour
     public Text enemiesLeftText;
     public Text currentWaveText;
 
-    private static int enemiesLeft = 0;
-    private static bool isNavigatingToExit = false;
+
+    
+    private int enemiesLeft = 0;
+
 
 
     private Player playerComponent;
@@ -50,8 +53,13 @@ public class GameManager : MonoBehaviour
 	private bool isSpawnedExit = false;
     private bool roundEnded = false;
     private bool isSpawningWave = false;
+    private bool isGameOver = false;
+    private bool isNavigatingToExit = false;
 
     private List<GameObject> activePowerups;
+    private List<GameObject> activeEnemies;
+
+    private Camera mainCamera;
 
 
 
@@ -70,6 +78,9 @@ public class GameManager : MonoBehaviour
         roundWaitTimeLeft = 999;
         StartCoroutine(SpawnWave(currentWave));
         activePowerups = new List<GameObject>();
+        activeEnemies = new List<GameObject>();
+
+        mainCamera = Camera.main;
     }
 
     public static GameManager Instance { get { return _instance; } }
@@ -104,6 +115,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void playerDestroyed()
+    {
+        isGameOver = true;
+        GameOverCanvas.SetActive(true);
+        GameOverCanvas.transform.position = mainCamera.transform.position;
+        GameOverCanvas.transform.rotation = mainCamera.transform.rotation;
+    }
+
+    public void onContinue()
+    {
+        isGameOver = false;
+        isSpawnedExit = false;
+        roundEnded = false;
+        isSpawningWave = false;
+        isNavigatingToExit = false;
+        print("CONTINUE CALLED!");
+        GameOverCanvas.SetActive(false);
+        foreach (GameObject enemy in activeEnemies)
+        {
+            Destroy(enemy);
+        }
+        activeEnemies.Clear();
+        for (int i = 0; i < activePowerups.Count; i++)
+        {
+            Destroy(activePowerups[i]);
+        }
+        player.transform.position = new Vector3(0, 500, 0);
+        player.SetActive(true);
+
+        player.GetComponent<Player>().restoreHealth(999);
+
+        currentWave--;
+        StartCoroutine(SpawnWave(currentWave));
+
+    }
+
     public void setRandomSkyBox()
     {
         RenderSettings.skybox = skyBoxes[Random.Range(0, skyBoxes.Count)];
@@ -122,44 +169,48 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (roundWaitTimeLeft > 0)
+        if (!isGameOver)
         {
-            roundWaitTimeLeft -= Time.deltaTime;
-            enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
-        }
-        else if(enemiesLeft <= 0)
-        {
-            if (currentWave <= wavesInputs.Count)
+            if (roundWaitTimeLeft > 0)
             {
-                if (!isNavigatingToExit && !isSpawningWave)
+                roundWaitTimeLeft -= Time.deltaTime;
+                enemiesLeftText.text = "Enemies Arrives In ... " + (int)roundWaitTimeLeft;
+            }
+            else if (enemiesLeft <= 0)
+            {
+                if (currentWave <= wavesInputs.Count)
                 {
-                    StartCoroutine(SpawnWave(currentWave));
+                    if (!isNavigatingToExit && !isSpawningWave)
+                    {
+                        StartCoroutine(SpawnWave(currentWave));
+                    }
+                }
+                else
+                {
+                    currentWaveText.text = "Congratulations!";
+                    enemiesLeftText.text = "You Win!";
                 }
             }
             else
             {
-                currentWaveText.text = "Congratulations!";
-                enemiesLeftText.text = "You Win!";
+                enemiesLeftText.text = enemiesLeft + " Enemies Left";
             }
-        }
-        else
-        {
-            enemiesLeftText.text = enemiesLeft + " Enemies Left";
-        }
-        if (Input.GetKeyDown("escape") && !CursorLockedVar)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = (false);
-            CursorLockedVar = (true);
-        }
-        else if (Input.GetKeyDown("escape") && CursorLockedVar)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = (true);
-            CursorLockedVar = (false);
+            if (Input.GetKeyDown("escape") && !CursorLockedVar)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = (false);
+                CursorLockedVar = (true);
+            }
+            else if (Input.GetKeyDown("escape") && CursorLockedVar)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = (true);
+                CursorLockedVar = (false);
+            }
         }
 
     }
+
     IEnumerator SpawnWave(int wave)
     {
         isSpawningWave = true;
@@ -193,11 +244,13 @@ public class GameManager : MonoBehaviour
             offset *= spawnRange;
 
             offset += new Vector3(0, 500, 0);
-            //Vector3 offset = new Vector3(Random.Range(-300, 300), Random.Range(400, 500), Random.Range(-300, 300));
+
+
             GameObject obj = (GameObject)Instantiate(toSpawn, player.transform.position + offset, Quaternion.identity);
             if(obj.GetComponent<AeroplaneAiControl>())
                 obj.GetComponent<AeroplaneAiControl>().SetTarget(player.transform);
             obj.transform.parent = transform;
+            obj.transform.LookAt(player.transform);
             EventTrigger trigger = obj.GetComponentInParent<EventTrigger>();
             EventTrigger.Entry entry = new EventTrigger.Entry();
             entry.eventID = EventTriggerType.PointerEnter;
@@ -207,8 +260,9 @@ public class GameManager : MonoBehaviour
             entry2.eventID = EventTriggerType.PointerExit;
             entry2.callback.AddListener((eventData) => { playerComponent.stopFiringBullets(); });
             trigger.triggers.Add(entry2);
+            activeEnemies.Add(obj);
         }
-        enemiesLeft += count;
+        enemiesLeft = activeEnemies.Count;
 
     }
 }

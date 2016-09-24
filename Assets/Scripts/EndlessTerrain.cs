@@ -60,7 +60,6 @@ public class EndlessTerrain : MonoBehaviour {
 				if (terrainChunkDictionary.ContainsKey (viewedChunkCoord)) {
 					terrainChunkDictionary [viewedChunkCoord].UpdateTerrainChunk ();
 				} else {
-                    print("Adding Terrain Chunk " + viewedChunkCoord);
 					terrainChunkDictionary.Add (viewedChunkCoord, new TerrainChunk (viewedChunkCoord, chunkSize, detailLevels, transform, mapMaterial));
 				}
 

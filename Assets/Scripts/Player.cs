@@ -134,7 +134,6 @@ public class Player : MonoBehaviour {
         
         if (other.gameObject.tag == "BulletPool" || other.gameObject.tag == "Terrain")
         {
-            pool.DevolveInstance(other.gameObject);
             if (!invincible)
             {
                 AudioSource.PlayClipAtPoint(explosionSound, transform.position);

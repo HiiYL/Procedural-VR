@@ -188,7 +188,7 @@ public class GvrReticle : MonoBehaviour, IGvrGazePointer {
     mesh.vertices = vertices;
     mesh.triangles = indices;
     mesh.RecalculateBounds();
-    mesh.Optimize();
+    ;
   }
 
   private void UpdateDiameters() {

@@ -178,6 +178,7 @@ public class GameManager : MonoBehaviour
             }
             else if (enemiesLeft <= 0)
             {
+				activeEnemies.Clear ();
                 if (currentWave <= wavesInputs.Count)
                 {
                     if (!isNavigatingToExit && !isSpawningWave)
@@ -262,7 +263,7 @@ public class GameManager : MonoBehaviour
             trigger.triggers.Add(entry2);
             activeEnemies.Add(obj);
         }
-        enemiesLeft = activeEnemies.Count;
+		enemiesLeft = activeEnemies.Count;
 
     }
 }
